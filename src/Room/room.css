@@ -1,0 +1,89 @@
+.room-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #c3b8c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.room-container{
+    background-color: rgb(255, 255, 255);
+    width: 35rem;
+    height: 20rem;
+    border: 0.1rem solid rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow .5s ease-in-out;
+    z-index: 1;
+}   
+.room-join-button{
+    background-color: rgb(255, 255, 255);
+}
+.room-id{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.room-email{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    width: 70%;
+    height: 2.5rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    border: 0.1rem solid;
+    background: rgba(241, 241, 241, 0.158); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+   padding: 18px;
+}
+.room-title{
+    margin-bottom:2rem;
+    margin-top: -2rem;
+}
+/* .room-container:hover{
+    box-shadow: 0 0 20px 5px rgba(0, 47, 255, 0.7);
+} */
+.input::placeholder{
+   color: black;
+   font-family: "Montserrat", sans-serif;
+}
+
+.circle{
+    width:100vw;
+    height:100vh;
+    border-radius: 50%;
+    background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    position: absolute;
+    top:-60vh;
+    right:-40vw;
+    z-index: 0;
+
+}
+.circle2{
+    width:100vw;
+    height:100vh;
+    border-radius: 50%;
+    background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    position: absolute;
+    bottom:-50vh;
+    left:-40vw;
+    z-index: 0;
+}
